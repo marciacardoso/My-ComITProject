@@ -2,28 +2,108 @@
 <html>
 
 <head>
-  <title>The challenge of First Aid</title>
+    <meta charset="utf-8">
+    <title>The challenge of First Aid</title>
 </head>
+<style>
+    body {
+        background-image: url("images/photo1.jpg"), url("paper.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: cursive, Arial, Helvetica;
+        font-size: 16px;
+
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        border: 2px solid black;
+
+
+
+    }
+
+    h1 {
+        height: 100px;
+        width: 500px;
+        /* We set the top, bottom margin to 0 and left, right to be auto */
+        margin: 0 auto;
+    }
+</style>
 
 <body>
-    
-  <h1>The Challenge of First Aid</h1>
-  <p> Whether You´re on the street, in your house or at your job, often the injured person has only you to help him. If you have
-    notions of First Aid, you can save a life that would be lost if you were not around.</p>
-  <img src="images/photo1.jpg" height="500" width="750"> 
-  <hr>
-  
-  <form>
-      <label>What´s Happening??</label> 
-      <br>  
-      <select name="Emergencies" multiple="multiple" size="6">
-          <option value="">Please select an Emergency</option>
-          <option value="bruise">Bruise</option>
-          <option value="burn">Burn</option>
-          <option value="choking">Choking</option>
-          <option value="impale" selected>Impale</option>
-  </form>
-  <a href="contact.html" target="blank">Contato</a>
+
+    <form>
+        <select name="Home">
+            <option value="">Home</option>
+
+        </select>
+        <select name="First Aid Survey Steps">
+            <option value="">First Aid Survey Steps</option>
+            <option value="pri">Primary Steps</option>
+            <option value="sec">Secondary Steps</option>
+        </select>
+        <select name="Emergencies">
+            <option value="">Emergencies</option>
+            <option value="teeth">Knocked-out-teeth</option>
+            <option value="cut">Cuts and Scrapes</option>
+            <option value="bru">Bruises</option>
+            <option value="blee">Deadly Bleeding</option>
+            <option value="obj">Impaled Objects</option>
+            <option value="amp">Amputations</option>
+            <option value="bur">Burns</option>
+            <option value="cho">Choking</option>
+            <option value="hns">Head, Neck, Spinal Injuries</option>
+            <option value="bmj">Bone, Muscle, Joints Injuries</option>
+            <option value="sho">Shock</option>
+            <option value="hearth">Hearth Attack</option>
+            <option value="dro">Drowning</option>
+            <option value="all">Allergy</option>
+
+        </select>
+
+        <select name="EMS/9-1-1">
+            <option value="">Call 911</option>
+
+        </select>
+        <select name="External Links">
+            <option value="">Go to External Links</option>
+            <option value="cou">First Aid Courses</option>
+            <option value="law">Laws - Can I?</option>
+
+        </select>
+        <select name="Contact">
+            <option value="">Contact</option>
+            <option value="">Collaborate with page</option>
+            <option value="sec">Contact us</option>
+        </select>
+    </form>
+
+    <header>
+        <h1>The Challenge of First Aid</h1>
+
+
+    </header>
+    <nav>
+        <div>
+
+        </div>
+        <section>
+            <p>
+                <strong>Definition:</strong> Help given to a sick or injured person until full medical treatment is available.</p>
+            <p> Whether You´re on the street, at your home or job, often the injured person has only you to help him. If you
+                have notions of First Aid, you can save a life that would be lost if you were not around.</p>
+        </section>
+
+
+
+
+    </nav>
+    <footer>
+
+    </footer>
+
 
 </body>
 
