@@ -2,109 +2,87 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>The challenge of First Aid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My comItProject</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style>
-    body {
-        background-image: url("images/photo1.jpg"), url("paper.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        font-family: cursive, Arial, Helvetica;
-        font-size: 16px;
-
-    }
-
-    header {
-        padding: 0;
-        margin: 0;
-        border: 2px solid black;
-
-
-
-    }
-
-    h1 {
-        height: 100px;
-        width: 500px;
-        /* We set the top, bottom margin to 0 and left, right to be auto */
-        margin: 0 auto;
-    }
-</style>
-
 <body>
+<div id="interface">
+<img id="icon" src="images/redcross.jpg">  
+<header id= "head">
+<div id="mainheader">
+    <h1>The Challenge of First Aid</h1>
+     
+</div>   
+<nav id="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="surveySteps.html">First Aid Survey Steps</a>
+        <li><a>Emergencies</a>
+            <ul>
+                <li><a href="emergencies/knockedOut.html">Knocked-out-teeth</a></li>
+                <li><a>Cuts and Scrapes</a></li>
+                <li><a>Bruises</a></li>
+                <li><a>Deadly Bleeding</a></li>
+                <li><a>Impaled Objects</a></li>
+                <li><a>Amputations</a></li>
+                <li><a>Burns</a></li>
+                <li><a>Choking</a></li>
+                <li><a>Head, Neck, Spinal Injuries</a></li>
+                <li><a>Bone, Muscles, Joint Injuries</a></li>
+                <li><a>Shock</a></li>
+                <li><a>Hearth Attack</a></li>
+                <li><a>Drowning</a></li>
+                <li><a>Allergy</a></li>
+            </ul> </li>
+                          
+        <li><a>EMS/9-1-1</a></li>
+        <li><a>External Links</a>
+            <ul>
+                <li><a>First Aid Courses</a></li>
+                <li><a>Canadian Law</a></li>
+            </ul></li>
+        <li><a>Contact</a>
+            <ul>
+                <li><a>Collaborate with page</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul></li>
+                          
+    </ul>
+                
+</nav>
+</header> 
+<section id="body">
+        <article id="history">
+                <h1>History of the Canadian Red Cross</h1>
+                <p>The Canadian Red Cross is one of the most active charity organizations in Canada, and works to provide relief during times of need to people throughout the country and the world.</p>
+                <p>In the spring of 1885, Dr. George Sterling Ryerson set the foundations for what would later be known as the Canadian Red Cross Society by sewing two strips of red fabric onto a piece of white cotton and draping this over horse-drawn wagons transporting injured men.</p>
+                <p>Today, the Canadian Red Cross has expanded and developed deeper relationships with local communities, the Government of Canada and other humanitarian organizations around the world.</p>
+                <p>The Canadian Red Cross has played a significant role in Canadian society for over 120 years. A new Canadian Red Cross digital history project provides all Canadians the chance to interact with over 120 years of Canadian Red Cross history and the opportunity to share their own Red Cross artifacts or items that have been part of their lives. </p>
+                <p>The programs offered by the Canadian Red Cross include disaster relief assistance, violence and abuse prevention, instruction on swimming and water safety, first aid and CPR courses and maternal health services in countries that lack access to essential healthcare.</p>
+                <h3><b>Establishing community links</b></h3>
+                <p>While Ryerson was inspired during Louis Riel's North West Rebellion in a way that would foretell the Canadian Red Cross' development in the country, it wasn't until 1896 that he officially founded the Canadian Red Cross, which was the first overseas branch of the British Red Cross to become established.</p>
+                <p>On May 19, 1909, The Canadian Red Cross Society Act was approved by Parliament, and decreed that the Canadian Red Cross would serve as an auxiliary to the Government of Canada for Canadians, which was a measure that was in accordance with the Geneva Conventions. With this act, the Canadian Red Cross became an independent charity organization and no longer a branch of the British Red Cross.</p>
+                <p>In the century that has passed, the Canadian Red Cross has supported federal, provincial, municipal and territorial governments in their efforts to help people who have been impacted by adversity.</p>
+                <h3><b>Make a difference</b></h3>
+                <p>From relief during emergencies and disasters to improving the knowledge that Canadians possess regarding first aid and CPR, water safety and violence and abuse prevention, the Canadian Red Cross is an organization that strives to help people enjoy a better quality of life and gain vital skills.</p>
+                <p>The programs that the Canadian Red Cross provides offer individuals the chance to volunteer, enhance their abilities to communicate in interpersonal relationships, swim safely and efficiently, act decisively during a major incident and help others in need. When emergencies occur, the Canadian Red Cross works to give people access to food, shelter and other items they may need to feel secure.</p>
+                <p>To show your support for the Canadian Red Cross and to help make a difference in the lives of people affected by adversity today, please donate online or at your local office. Each contribution can help the Red Cross continue its lifesaving work both in Canada and in other countries around the world.</p>
+        </article>
+</section>
+<aside id="side">
+          
+</aside>
+    
+               
+<footer>
+         <p> Copyright &copy; 2018 - by Marcia Okamoto Patriota Cardoso<br>
+            <a href="https://www.facebook.com/marcia.cardoso.52643821?ref=bookmarks" target="blank" >Facebook</a></p>
+             
+</footer>
 
-    <form>
-        <select name="Home">
-            <option value="">Home</option>
-
-        </select>
-        <select name="First Aid Survey Steps">
-            <option value="">First Aid Survey Steps</option>
-            <option value="pri">Primary Steps</option>
-            <option value="sec">Secondary Steps</option>
-        </select>
-        <select name="Emergencies">
-            <option value="">Emergencies</option>
-            <option value="teeth">Knocked-out-teeth</option>
-            <option value="cut">Cuts and Scrapes</option>
-            <option value="bru">Bruises</option>
-            <option value="blee">Deadly Bleeding</option>
-            <option value="obj">Impaled Objects</option>
-            <option value="amp">Amputations</option>
-            <option value="bur">Burns</option>
-            <option value="cho">Choking</option>
-            <option value="hns">Head, Neck, Spinal Injuries</option>
-            <option value="bmj">Bone, Muscle, Joints Injuries</option>
-            <option value="sho">Shock</option>
-            <option value="hearth">Hearth Attack</option>
-            <option value="dro">Drowning</option>
-            <option value="all">Allergy</option>
-
-        </select>
-
-        <select name="EMS/9-1-1">
-            <option value="">Call 911</option>
-
-        </select>
-        <select name="External Links">
-            <option value="">Go to External Links</option>
-            <option value="cou">First Aid Courses</option>
-            <option value="law">Laws - Can I?</option>
-
-        </select>
-        <select name="Contact">
-            <option value="">Contact</option>
-            <option value="">Collaborate with page</option>
-            <option value="sec">Contact us</option>
-        </select>
-    </form>
-
-    <header>
-        <h1>The Challenge of First Aid</h1>
-
-
-    </header>
-    <nav>
-        <div>
-
-        </div>
-        <section>
-            <p>
-                <strong>Definition:</strong> Help given to a sick or injured person until full medical treatment is available.</p>
-            <p> Whether You´re on the street, at your home or job, often the injured person has only you to help him. If you
-                have notions of First Aid, you can save a life that would be lost if you were not around.</p>
-        </section>
-
-
-
-
-    </nav>
-    <footer>
-
-    </footer>
-
-
+</div>
 </body>
 
 </html>
