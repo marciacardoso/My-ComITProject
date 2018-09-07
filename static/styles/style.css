@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FonteLogo';
-    src: url("fonts/LoveYaLikeASister.ttf");
+    src: url("../fonts/LoveYaLikeASister.ttf");
 }
 
 #mainheader{
@@ -13,7 +13,8 @@
     height: 100%;
     position: relative;
     z-index: 0;
-    background-image: url("images/history.jpg");
+    background-image: url("../images/history.jpg");
+    opacity: .8;
 }
 
 div#interface img#icon {
@@ -88,8 +89,20 @@ section#body {
         border-right: 1px solid #606060;
         font-family: 'FonteLogo', cursive;
         font-size: 20px;
-
        
+}
+#emergencies {
+        display: block;
+        text-align: justify;
+        padding: 10px;
+        width: 550px;
+        height: 45%;
+        margin: -20px auto 0px auto;
+        float: left;
+        border-right: 1px solid #606060;
+        font-family: 'FonteLogo', cursive;
+        font-size: 20px;
+
 }
 aside#side {
     display: block;
