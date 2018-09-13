@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family: 'FonteLogo';
+  src: url("../fonts/LoveYaLikeASister.ttf");
+}
+body#survey {
+  display: block;
+  text-align: justify;
+  padding: 10px;
+  width: 1000px;
+  background-color: #ffffff;
+  height: 45%;
+  margin: -20px auto 0px auto;
+  border-right: 1px #606060;
+  font-family: 'FonteLogo', cursive;
+  font-size: 20px;
+}
+h1 #survey {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+figure {
+  float: right;
+  width: 308px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin white;
+  box-shadow: 1px 1px 4px black;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+article#interfacesteps {
+  width: 800px;
+  padding: 10px;
+}
+p {
+  text-align: justify;
+  text-indent: 20px;
+  padding: 10px;
+}

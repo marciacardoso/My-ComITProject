@@ -1,4 +1,3 @@
-include emergency
 doctype html
 html
   head
@@ -6,6 +5,17 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title My comItProject
     link(rel="stylesheet" type="text/css" href="styles/style.css")
+    script.
+      function loadContentInBody(contentURL){
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("body").innerHTML = this.responseText;
+      }
+      };
+      xhttp.open("GET", contentURL, true);
+      xhttp.send();
+      }
   body
     #interface
       img#icon(src="images/redcross.jpg")
@@ -17,71 +27,64 @@ html
             li
               a(href="/") Home
             li
-              a(href="surveySteps.pug") First Aid Survey Steps
+              a First Aid Survey Steps
+              ul
+                li
+                  a(href="#" onclick="loadContentInBody('primarySteps')") Primary Steps
+                li
+                  a(href="#" onclick="loadContentInBody('secondarySteps')") Secondary Steps
             li
               a Emergencies
               ul
                 li
-                  a(href="html/emergencies/knockedOut.html") Knocked-out-teeth
+                  a(href="#" onclick="loadContentInBody('knockedOut')") Knocked-out-teeth
                 li
-                  a(href="html/emergencies/cutsAndScrapes.html") Cuts and Scrapes
+                  a(href="#" onclick="loadContentInBody('cutsAndScrapes')") Cuts and Scrapes
                 li
-                  a Bruises
+                  a(href="#" onclick="loadContentInBody('bruises')") Bruises
                 li
-                  a Deadly Bleeding
+                  a(href="#" onclick="loadContentInBody('externalDeadlyBleeding')") External Deadly Bleeding
                 li
-                  a Impaled Objects
+                  a(href="#" onclick="loadContentInBody('internalDeadlyBleeding')") Internal Deadly Bleeding
                 li
-                  a Amputations
+                  a(href="#" onclick="loadContentInBody('impaledObjects')") Impaled Objects
                 li
-                  a Burns
+                  a(href="#" onclick="loadContentInBody('amputations')") Amputations
                 li
-                  a Choking
+                  a(href="#" onclick="loadContentInBody('burns')") Burns
                 li
-                  a Head, Neck, Spinal Injuries
-                li
-                  a Bone, Muscles, Joint Injuries
-                li
-                  a Shock
-                li
-                  a Hearth Attack
-                li
-                  a Drowning
-                li
-                  a Allergy
+                  a(href="#" onclick="loadContentInBody('bonesMuscleAndJointInjuries')") Bone, Muscles, Joint Injuries
             li
-              a EMS/9-1-1
-            li
-              a External Links
-              ul
-                li
-                  a First Aid Courses
-                li
-                  a Canadian Law
+              a(href="#" onclick="loadContentInBody('cpr')") CPR
             li
               a Contact
               ul
                 li
-                  a Collaborate with page
-                li
-                  a(href="contact") Contact us
-      section#body
-            +emergency({ 
-          "name" : "Knocked-out-teeth",
-          "photo" : "https://www.youtube.com/embed/KhHyIeionv8?rel=0", 
-          "definition" :"An avulsed tooth is one that has been knocked out",
-          "causes": ["a blow to the mouth", "an accident involving the face", "while playing contact sports"],
-          "checkScene": "the scene quickly to figure out if the local is safe", 
-          "checkPerson": " check the person´s ABCs",
-          "call911If": ["the tooth was knocked out by a forceful blow", "you suspect more serious injuries"],
-          "care": ["have the person bite down on a clean dressing", "carefully pick up the tooth by the crown - the white part- and keep it protected", "protected the tooth by putting it in egg white, coconut water, saline or whole milk, or wrapping the tooth in gauze or a clean cloth with some of the person´s saliva"],
-          "important": ["The tooth can be replaced in the socket successfully if you take the right action as soon as possible."]
-            })
-            
-        
-      aside#side
-      footer
+                  a(href="#" onclick="loadContentInBody('contact')") Contact us
+  section#body
+      article#goal
+        .draw
+          img#why(src="images/why.jpg")
+        h2 Why to study First Aid?
         p
-          | Copyright © 2018 - by Marcia Okamoto Patriota Cardoso
-          br
-          a(href="https://www.facebook.com/marcia.cardoso.52643821?ref=bookmarks" target="blank") Facebook
+          | This training will give you the confidence and knowledge to respond quickly and safely in an emergency. Learning first aid will help you know what to do for problems like burns, cuts, head injuries, and broken bones. Find out more about first
+          | aid. Knowing CPR can help when someone's heart or breathing has stopped.
+        p
+          strong CPR??
+        | CPR is a medical technique for reviving someone whose heart has stopped beating by pressing on their chest and breathing into their mouth. CPR is an abbreviation for 
+        strong cardiopulmonary resuscitation.
+        .draw
+          img#what(src="images/find.png")
+        h2 What will you find here?
+        p
+          | You will find a lot of emergencies and the first aid steps for each one.This website aims to teach quickly and easily how to deal with emergencies in your day-to-day life.
+        .draw
+          img#collaborate(src="images/collaboration.jpg")
+        h2 Colaborate
+        p
+          | You can collaborate with our page by sending in the contact page your opinions and your doubts.
+        p Welcome and Enjoy it!!
+footer
+  p
+    | Copyright © 2018 - by Marcia Okamoto Patriota Cardoso
+  br

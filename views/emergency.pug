@@ -1,36 +1,35 @@
-mixin emergency(emergency)
-  article#emergencies
-    h1 Emergencies
-    hr
-    h2= emergency.name
-    #video
-      iframe(width="560" height="315" src="https://www.youtube.com/embed/KhHyIeionv8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="")
-    h3 Definition
-    p= emergency.definition
-    h3 Causes
-    ul
-      each val in emergency.causes
-        li= val
-    div
-    h3 Check the scene
-    p= emergency.checkScene
-    h3 Check the person
-    ul
-      each val in emergency.checkPerson
-        li= val
-    div
-    h3 Call EMS/9-1-1 if:
-    ul
-      each val in emergency.call911If 
-        li= val
-    div
-    h3 Care:
-    ul
-      each val in emergency.care
-        li= val
-    div
-    h3 Important:
-    ul
-      each val in emergency.important
-        li= val
-          
+article#emergencies
+  h1 Emergencies
+  hr
+  h2= name
+  #video
+    iframe(width="560" height="315" src=video frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="")
+  h3 Definition
+  p= definition
+  h3 Causes
+  ul
+    each val in causes
+      li= val
+  div
+  h3 Check the scene
+  p= checkScene
+  h3 Check the person
+  ul
+    each val in checkPerson
+      li= val
+  div
+  h3 Call EMS/9-1-1 if:
+  ul
+    each val in call911If
+      li= val
+  div
+  h3 Care:
+  ul
+    each val in care
+      li= val
+  div
+  h3 Important:
+  ul
+    each val in important
+      li= val
+        

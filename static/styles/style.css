@@ -8,13 +8,13 @@
     padding: 20px 10px 20px 20px;
     font-size: 20px;
     font-family: 'FonteLogo', cursive;
-    color: rgb(110, 10, 10); 
-    width: 95%;
+    color: rgb(68, 10, 10); 
+    width: 97%;
     height: 100%;
     position: relative;
     z-index: 0;
     background-image: url("../images/history.jpg");
-    opacity: .8;
+    opacity: .9;
 }
 
 div#interface img#icon {
@@ -26,19 +26,19 @@ div#interface img#icon {
 nav {
     position: absolute;
     z-index: 1;
-    top:-1px;
+    top:5px;
 }
 nav a:hover {
     color:black;
 }
-ul{
+nav ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-ul li{
+ nav ul li {
     float: left;
-    width: 165px;
+    width: 198.5px;
     height: 40px;
     background-color: rgb(59, 7, 102);
     line-height: 40px;
@@ -46,7 +46,7 @@ ul li{
     font-size: 15px;
     margin-right: 2px;
 }
- ul li a {
+  nav ul li a {
      text-decoration: none;
      color: white;
      display: block; 
@@ -56,7 +56,7 @@ ul li{
  ul li a:hover {
      background-color:#be2525;
  }
- ul li ul li {
+ nav ul li ul li {
      display: none;
  }
  ul li:hover ul li {
@@ -65,75 +65,70 @@ ul li{
 
 body {
     background-color: #dddddd;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'FonteLogo', cursive;
     font-size: 16px;
     color: black;
 }  
-  div#interface{
-      width: 1000px;
-      background-color: #ffffff;
-      margin: -20px auto 0px auto;
-      box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-      padding: 10px;
-      font-family: 'FonteLogo', cursive;
+div#interface{
+    width: 1000px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    padding: 10px;
+    font-family: 'FonteLogo', cursive;
 }
 
 section#body {
-        display: block;
-        text-align: justify;
-        padding: 10px;
-        width: 550px;
-        height: 45%;
-        margin: -20px auto 0px auto;
-        float: left;
-        border-right: 1px solid #606060;
-        font-family: 'FonteLogo', cursive;
-        font-size: 20px;
-       
-}
-#emergencies {
-        display: block;
-        text-align: justify;
-        padding: 10px;
-        width: 550px;
-        height: 45%;
-        margin: -20px auto 0px auto;
-        float: left;
-        border-right: 1px solid #606060;
-        font-family: 'FonteLogo', cursive;
-        font-size: 20px;
-
-}
-aside#side {
     display: block;
-    width: 350px;
-    float: right;
+    text-align: justify;
+    padding: 10px;
+    width: 1000px;
+    background-color: #ffffff;
+    height: 45%;
+    margin: -20px auto 0px auto;
+    border-right: 1px #606060;
+    font-family: 'FonteLogo', cursive;
+    font-size: 20px;
+}
+h1#goal {
+    background-image: url(../images/Why-blue-2.png);
+    font-size: 20px;
+}
+#goal {
+    display: block;
+    text-align: justify;
+    padding: 10px;
+    width: 991px;
+    height: 45%;
+    margin: -20px auto 0px auto;
+    background-color: #ffffff;
+    font-family: 'FonteLogo', cursive;
+    font-size: 20px;
+}
+.draw {
+    position: relative;
+    left: 50%;
+    margin-left: -100px; 
+    z-index: 0;
+}
+#cpr {
+    position: left;
 }
 footer {
+    margin: -20px auto 0px auto;
+    background-color: #ffffff;
     clear: both;
     border-top: 1px solid #606060;
+    width: 76.5%;
 }
 footer p {
     text-align: center;
 }
 p {
-    font-family:'serif';
+    font-family:'FonteLogo', cursive;
     font-size: 20px;
     text-align: justify;
     text-indent: 50px;
 }
-.footer{
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 10%;
-   background-color:black;
-   color: white;
-   opacity:.8;
-   text-align: center;
-   border: solid 2px brown; 
 
-}
  
 
